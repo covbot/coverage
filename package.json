@@ -1,0 +1,24 @@
+{
+	"name": "root",
+	"description": "",
+	"version": "1.0.0",
+	"private": true,
+	"main": "index.js",
+	"author": "",
+	"license": "ISC",
+	"keywords": [],
+	"scripts": {
+		"format": "pnpm format:manifest && pnpm format:code",
+		"format:code": "prettier --write **/*.{js,cjs,mjs,ts,tsx,json,yaml,md}",
+		"format:manifest": "syncpack format",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"devDependencies": {
+		"@covbot/configs": "github:covbot/configs",
+		"@sirse-dev/eslint-config": "^2.2.0",
+		"eslint": "^8.34.0",
+		"prettier": "^2.8.4",
+		"syncpack": "^9.3.2",
+		"typescript": "^4.9.5"
+	}
+}
